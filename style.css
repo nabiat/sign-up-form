@@ -35,13 +35,17 @@ body > * {
 
 }
 
-label {
-    font-size: 8px;
-}
-
 .left-inputs, .right-inputs {
     display: flex;
     flex-direction: column;
+}
+
+.acc_exists {
+    font-size: 8px;
+}
+
+label {
+    font-size: 8px;
 }
 
 input {
