@@ -28,32 +28,43 @@ body > * {
     margin-right: 20px;
 }
 
-.form {
-    gap: 50px;
+.name, .contact, .pass_info {
+    gap: 10%;
     display: flex;
     justify-content: start;
-
 }
 
-.left-inputs, .right-inputs {
-    display: flex;
-    flex-direction: column;
+.name, .contact {
+    margin-bottom: 10px;
 }
 
 .acc_exists {
     font-size: 8px;
 }
 
-label {
+.no_match {
+    display: block;
     font-size: 8px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 8px;
+    text-align: left;
 }
 
 input {
-    margin-bottom: 10px;
+    border: 1px solid #E5E7EB;
 }
 
 p, button {
     font-size: 12px;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
 }
 
 a {

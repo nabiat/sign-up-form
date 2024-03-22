@@ -3,15 +3,12 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./style.css">
+        <script src="./validation.js" defer></script>
     </head>
 
     <body>
         <div class="container">
-            <div class="left">
-                <div class="title">
-                    
-                </div>
-            </div>
+            <div class="left"></div>
 
             <div class="right">
                 <p>This is not a real online service! You know you need something 
@@ -20,31 +17,51 @@
                 <p>You <em>know</em> you want to.</p>
                 <p>Let's do this!</p>
 
-                <div class="form">
-                    <div class="left-inputs">
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" required>
-
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" required>
-
-                        <label for="pass">PASSWORD</label>
-                        <input type="password" id="pass" required>
+                <form>
+                    <div class="name">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" required>
+                        </div>
+                        
+                        <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" required>
+                        </div>
                     </div>
 
-                    <div class="right-inputs">
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" required>
-
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" required>
-
-                        <label for="pass_confirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="pass_confirm" required>
+                    <div class="contact">
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+    
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" required>
+                        </div>
                     </div>
-                </div>
 
-                <button>Create Account</button>
+                    <div class="pass_info">
+                        <div>
+                            <label for="pass">PASSWORD</label>
+                            <input type="password" name="pass" id="pass" required>
+                            
+                        </div>
+    
+                        <div>
+                            <label for="pass_confirm">CONFIRM PASSWORD</label>
+                            <input type="password" name="pass_confirm" id="pass_confirm" onkeyup="check()" required>
+                        </div>
+                    </div>
+
+                    <span class="no_match"></span>
+
+                    <div>
+                        <button type="submit">Create Account</button>
+                    </div>                    
+                </form>
+                
                 <p class="acc_exists">Already have an account? <a href="Login">Login</a></p>
             </div>
         </div>
